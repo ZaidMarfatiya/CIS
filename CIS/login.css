@@ -1,0 +1,91 @@
+﻿
+.login_form
+{
+    width: 420px;
+    height: 340px;
+    background: #fff;
+    /*border-radius: 10px;*/
+    margin-top: 6px;
+    /*border-bottom: 3px solid #b5caff;*/
+}
+.login_form h1
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    color: #fff;
+    background-color: darkblue;
+    text-align: center;
+    padding-left: 15px;
+    text-transform: uppercase;
+    line-height: 2;
+    border-left: 2px solid #3dff3d;
+    border-right: 2px solid #3dff3d;
+}
+.login_un {
+    float: left;
+    margin: 20px 20px 18px 18px;
+    width: 350px;
+    height: 32px;
+    padding-left: 10px;
+    font-family: 'Segoe UI';
+    font-size: 13px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    background: url('../images/sl.png') no-repeat; 
+    background-position:  330px 5px;
+    border-radius: 8px;
+}
+.login_form input:focus
+{
+    border: 1px solid blue;
+    outline: none;
+}
+.login_ps {
+    float: left;
+    margin: 20px 20px 18px 18px;
+    width: 350px;
+    height: 32px;
+    padding-left: 10px;
+    font-family: 'Segoe UI';
+    font-size: 13px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    background: url('../images/lock.png') no-repeat; 
+    background-position: 326px 4px;
+    border-radius: 8px;
+}
+   
+.button
+        {
+
+            background-color: #000;
+            color: #fff;
+            font-size: 20px;
+            width: 120px;
+            height: 40px;
+            font-weight: bold;
+        }
+    .button:hover {
+        background-color: darkblue;
+        color: #fff;
+    }
+.mr
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: darkblue;
+    font-size: 18px;    
+}
+.btn
+        {
+
+            background-color: gainsboro;
+            color: darkblue;
+            font-size:17px;
+            width:280px;
+            height: 44px;
+            font-weight:bold;
+        }
+        .btn:hover {
+        background-color:green;
+        color: #fff;
+    }

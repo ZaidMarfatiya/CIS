@@ -1,0 +1,42 @@
+﻿.table {
+    font-family:'Times New Roman';
+    text-align: justify;
+    font-size: 20px;
+    color: #000011;
+    
+}
+
+.th {
+    font-family: 'Times New Roman';
+    text-align: center;
+    font-size: 30px;
+    background-color: #00ff21;
+    color: #0000AA;
+}
+
+tr.eff {
+    text-decoration: none;
+    color: #0000AA;
+    background-color: #d2d9dd;
+}
+
+    tr.eff:hover {
+        color: #f4f7f8;
+        font-weight: 500;
+        background-color: #8a97a0;
+    }
+
+tr.odd {
+    text-decoration: none;
+    color: #0000A5;
+    background-color: #ffffff;
+}
+
+    tr.odd:hover {
+        color: #f4f7f8;
+        font-weight: 500;
+        background-color: #8a97a5;
+    }
+
+
+

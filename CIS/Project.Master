@@ -1,0 +1,81 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Project.master.vb" Inherits="CIS.Project" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<script src="JavaScript.js"></script>
+<head runat="server">
+    <title>મુખ્ય પાકોની માહિતી</title>
+    <script type="text/javascript">
+        function OnFocusInput (input) {
+            input.style.color = "red";
+        }
+
+        function OnBlurInput (input) {
+            input.style.color = "";
+        }
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="main.css" rel="stylesheet" />
+</head>
+<body class="body">
+    <form id="form1" runat="server">
+     <div class="header">
+           <h2 class="h2">મુખ્ય પાકોની માહિતી</h2> 
+       
+        </div>
+        <br />
+        <div class="menu">
+            <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" StaticHoverStyle-BackColor="#66FF33" BackColor="#B5C7DE" DynamicHorizontalOffset="4" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#284E98" StaticSubMenuIndent="10px" DynamicMenuItemStyle-Width="107px">
+                <DynamicHoverStyle BackColor="#284E98" ForeColor="White" />
+                <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="4px" />
+                <DynamicMenuStyle BackColor="#B5C7DE" />
+                <DynamicSelectedStyle BackColor="#507CD1" />
+                <Items>
+                    <asp:MenuItem NavigateUrl="~/homepage.aspx" Text="હોમ" Value="હોમ"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/maincrop1.aspx" Text="મુખ્ય પાકો" Value="મુખ્ય પાકો"></asp:MenuItem>
+                    <asp:MenuItem  Text="ખેડૂતની મુંજવણ" Value="ખેડૂત ને મુંઝવતા પ્રશ્નો">
+                        <asp:MenuItem NavigateUrl="~/wheat1.aspx" Text="ઘઉં" Value="ઘઉં"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/rice1.aspx" Text="ડાંગર" Value="ડાંગર"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/jowar.aspx" Text="જુવાર" Value="જુવાર"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/gnut.aspx" Text="મગફળી" Value="મગફળી"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/ppea.aspx" Text="તુવેર" Value="તુવેર"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/brinjal.aspx" Text="રીંગણ" Value="રીંગણ"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/gallery.aspx" Text="ગેલેરી" Value="ગેલેરી"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/about.aspx" Text="અમારા વિશે" Value="New Item"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/contact.aspx" Text="સંપર્ક કરો" Value="સંપર્ક કરો"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/nextlogin.aspx" Text="લોગ ઇન" Value="લોગ ઇન"></asp:MenuItem>
+                </Items>
+                <LevelMenuItemStyles>
+                    <asp:MenuItemStyle CssClass="main_menu" BackColor="white" ForeColor="red" />
+                </LevelMenuItemStyles>
+
+<StaticHoverStyle BackColor="#284E98" ForeColor="White"></StaticHoverStyle>
+
+                <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <StaticMenuStyle BackColor="#66FF33" ForeColor="#FF3300" />
+                <StaticSelectedStyle BackColor="#507CD1" />
+            </asp:Menu>
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
+        </div>
+        <div style="height:35px">
+
+        </div>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    <div style="height:30px; width:100%;color:red;text-align:right; padding-right:10px; font-size:20px;padding-top:10px;">
+        <center>Copyright &copy; 2017-18 by "Zaid Marfatiya"  <b>|</b>  All Rights reserved  <b>|</b>  E-Mail: zaidmarfatiya@gmail.com</center>
+    </div>
+   </form>
+</body>
+</html>
+<asp:ContentPlaceHolder ID="Footer" runat="server"></asp:ContentPlaceHolder>

@@ -1,0 +1,64 @@
+﻿.body {
+    background-image: url(bc4.jpg); 
+    background-size: 100%;
+    background-position: top center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed
+}
+
+.h2 {
+    font-size: 40px;
+    color:red;
+    font-family: Algerian;
+    font-family: Calibri;
+    vertical-align: central;
+    text-align:center;
+}
+
+.menu {
+    width: 100%;
+    height: 35px;
+    
+}
+
+.footer {
+    background-color:lightgray;
+    width: 100%;
+    height: 50px;
+}
+
+
+.main_menu {
+    width: 174px;
+    background-color:white;
+    padding:10px;
+    color: darkred;
+    text-align: center;
+    height: 35px;
+    line-height: 30px;
+    margin-right: 5px;
+}
+
+.selected {
+    background-color: orange;
+    color: saddlebrown;
+
+}
+.maincrop{
+    align-content:center;
+}
+.img111:hover {
+margin:0px;
+height:180px;
+width:200px;
+-moz-transition:-moz-transform 0.5s ease-in; 
+-webkit-transition:-webkit-transform 0.5s ease-in; 
+-o-transition:-o-transform 0.5s ease-in;
+}
+.img111:hover{
+-moz-transform:scale(2); 
+-webkit-transform:scale(2);
+-o-transform:scale(2);
+}
+
+

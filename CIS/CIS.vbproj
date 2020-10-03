@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{A5AAE53B-8AF2-4CED-B0A1-9E1010272CEE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CIS</RootNamespace>
+    <AssemblyName>CIS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>CIS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>CIS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about.aspx" />
+    <Content Include="adminlogin.aspx" />
+    <Content Include="bc4.jpg" />
+    <Content Include="brinjal.aspx" />
+    <Content Include="contact.aspx" />
+    <Content Include="faqs.aspx" />
+    <Content Include="faqs1.aspx" />
+    <Content Include="farmerque.aspx" />
+    <Content Include="gallery.aspx" />
+    <Content Include="gnut.aspx" />
+    <Content Include="home2.aspx" />
+    <Content Include="homepage.aspx" />
+    <Content Include="Image\45.png" />
+    <Content Include="Image\adn.jpg" />
+    <Content Include="Image\ashok6.jpg" />
+    <Content Include="Image\banan1.jpg" />
+    <Content Include="Image\banana.png" />
+    <Content Include="Image\banana2.jpg" />
+    <Content Include="Image\Basket-Fruit.jpg" />
+    <Content Include="Image\bcg.png" />
+    <Content Include="Image\blackgram.png" />
+    <Content Include="Image\Brinjal.png" />
+    <Content Include="Image\brinjalbig.jpg" />
+    <Content Include="Image\crop.jpg" />
+    <Content Include="Image\Cultivation_of_peanut_crop_in_Junagadh_region_of_Western_India - Copy.jpg" />
+    <Content Include="Image\Cultivation_of_peanut_crop_in_Junagadh_region_of_Western_India.jpg" />
+    <Content Include="Image\gn1.jpg" />
+    <Content Include="Image\groundnut.png" />
+    <Content Include="Image\hnm h.jpg" />
+    <Content Include="Image\icon.jpg" />
+    <Content Include="Image\image.jpg" />
+    <Content Include="Image\images %281%29.jpg" />
+    <Content Include="Image\index.jpg" />
+    <Content Include="Image\loading.gif" />
+    <Content Include="Image\logo.gif" />
+    <Content Include="Image\MangoPlum_ss_134281466-2_Crop3.jpg" />
+    <Content Include="Image\Pulses_-_Dry_Peas,_Beans,_Chickpeas,_Lentils.jpg" />
+    <Content Include="Image\rice.png" />
+    <Content Include="Image\rice2.jpg" />
+    <Content Include="Image\s.jpg" />
+    <Content Include="Image\wheat.png" />
+    <Content Include="index.jpg" />
+    <Content Include="JavaScript.js" />
+    <Content Include="jowar.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="login.css" />
+    <Content Include="main.css" />
+    <Content Include="maincrop1.aspx" />
+    <Content Include="maincrop2.aspx" />
+    <Content Include="nextlogin.aspx" />
+    <Content Include="ppea.aspx" />
+    <Content Include="question.css" />
+    <Content Include="questions.aspx" />
+    <Content Include="regform.aspx" />
+    <Content Include="rice1.aspx" />
+    <Content Include="scicrop.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="wheat1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.aspx.designer.vb">
+      <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="about.aspx.vb">
+      <DependentUpon>about.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="adminlogin.aspx.designer.vb">
+      <DependentUpon>adminlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminlogin.aspx.vb">
+      <DependentUpon>adminlogin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="brinjal.aspx.designer.vb">
+      <DependentUpon>brinjal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="brinjal.aspx.vb">
+      <DependentUpon>brinjal.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="contact.aspx.designer.vb">
+      <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contact.aspx.vb">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="faqs.aspx.designer.vb">
+      <DependentUpon>faqs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="faqs.aspx.vb">
+      <DependentUpon>faqs.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="faqs1.aspx.designer.vb">
+      <DependentUpon>faqs1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="faqs1.aspx.vb">
+      <DependentUpon>faqs1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="farmerque.aspx.designer.vb">
+      <DependentUpon>farmerque.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="farmerque.aspx.vb">
+      <DependentUpon>farmerque.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="gallery.aspx.designer.vb">
+      <DependentUpon>gallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gallery.aspx.vb">
+      <DependentUpon>gallery.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="gnut.aspx.designer.vb">
+      <DependentUpon>gnut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gnut.aspx.vb">
+      <DependentUpon>gnut.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="home2.aspx.designer.vb">
+      <DependentUpon>home2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="home2.aspx.vb">
+      <DependentUpon>home2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="homepage.aspx.designer.vb">
+      <DependentUpon>homepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="homepage.aspx.vb">
+      <DependentUpon>homepage.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jowar.aspx.designer.vb">
+      <DependentUpon>jowar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jowar.aspx.vb">
+      <DependentUpon>jowar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="maincrop1.aspx.designer.vb">
+      <DependentUpon>maincrop1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maincrop1.aspx.vb">
+      <DependentUpon>maincrop1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="maincrop2.aspx.designer.vb">
+      <DependentUpon>maincrop2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maincrop2.aspx.vb">
+      <DependentUpon>maincrop2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="nextlogin.aspx.designer.vb">
+      <DependentUpon>nextlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="nextlogin.aspx.vb">
+      <DependentUpon>nextlogin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ppea.aspx.designer.vb">
+      <DependentUpon>ppea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ppea.aspx.vb">
+      <DependentUpon>ppea.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Project.Master.designer.vb">
+      <DependentUpon>Project.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Project.Master.vb">
+      <DependentUpon>Project.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="questions.aspx.designer.vb">
+      <DependentUpon>questions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="questions.aspx.vb">
+      <DependentUpon>questions.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="regform.aspx.designer.vb">
+      <DependentUpon>regform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="regform.aspx.vb">
+      <DependentUpon>regform.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="rice1.aspx.designer.vb">
+      <DependentUpon>rice1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rice1.aspx.vb">
+      <DependentUpon>rice1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="scicrop.aspx.designer.vb">
+      <DependentUpon>scicrop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="scicrop.aspx.vb">
+      <DependentUpon>scicrop.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="scie.Master.designer.vb">
+      <DependentUpon>scie.Master</DependentUpon>
+    </Compile>
+    <Compile Include="scie.Master.vb">
+      <DependentUpon>scie.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wheat1.aspx.designer.vb">
+      <DependentUpon>wheat1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wheat1.aspx.vb">
+      <DependentUpon>wheat1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Project.Master" />
+    <Content Include="scie.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61164</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:61164/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
