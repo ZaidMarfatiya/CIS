@@ -11,7 +11,7 @@
                 <br />
                 <div class="login_form">
                  
-                    <h1>લોગ ઇન</h1>
+                    <h1>લોગ ઇન</h1> <!-- LOGIN BUTTON name written in gujarati-->
                     <asp:TextBox ID="TextBox1" runat="server" placeholder="યુઝરનેઈમ" CssClass="login_un"></asp:TextBox> <!-- User Name-->
                     <asp:TextBox ID="TextBox2" runat="server" placeholder="પાસવર્ડ" CssClass="login_ps" TextMode="Password"></asp:TextBox>
 
