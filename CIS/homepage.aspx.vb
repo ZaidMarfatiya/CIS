@@ -6,11 +6,11 @@
     End Sub
 
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button6.Click
-        Response.Redirect("faqs.aspx")
+        Response.Redirect("faqs.aspx") 'Redirect to FAQS page
     End Sub
 
     Protected Sub Button2_Click(sender As Object, e As EventArgs) Handles Button7.Click
-        Response.Redirect("pdf/farmer1.pdf")
+        Response.Redirect("pdf/farmer1.pdf") 'Redirect to pdfs
     End Sub
 
     Protected Sub Button3_Click(sender As Object, e As EventArgs) Handles Button8.Click
