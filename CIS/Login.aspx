@@ -12,7 +12,7 @@
                 <div class="login_form">
                  
                     <h1>લોગ ઇન</h1>
-                    <asp:TextBox ID="TextBox1" runat="server" placeholder="યુઝરનેઈમ" CssClass="login_un"></asp:TextBox>
+                    <asp:TextBox ID="TextBox1" runat="server" placeholder="યુઝરનેઈમ" CssClass="login_un"></asp:TextBox> <!-- User Name-->
                     <asp:TextBox ID="TextBox2" runat="server" placeholder="પાસવર્ડ" CssClass="login_ps" TextMode="Password"></asp:TextBox>
 
                     <asp:Button ID="Button1" runat="server" Text="લોગ ઇન" CssClass="button" OnClick="Button1_Click1"></asp:Button>
