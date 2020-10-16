@@ -43,9 +43,9 @@
                 }
             }
             ScaleSlider();
-            $Jssor$.$AddEvent(window, "load", ScaleSlider);
-            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
-            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);//Load
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);//Resize
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);//Orientation
             };
     </script>
          <div style="padding-top:0px;">
